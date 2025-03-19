@@ -8,10 +8,6 @@ export default function Alter() {
       {/* Top Navigation */}
       <div className="flex justify-between text-sm mb-6">
         <div></div>
-        <nav className="flex space-x-4">        <Link href="/account" className="hover:underline">Account</Link>
-        <Link href="/cart" className="hover:underline">Bag (1)</Link>
-      </nav>
-
       </div>
       {/* Filter Option */}
       <p className="text-right text-sm mb-6 cursor-pointer hover:underline">Filter</p>
@@ -55,7 +51,7 @@ export default function Alter() {
       {/* Fixed Background Image */}
       <div className="absolute bottom-0 right-0 w-[150px] md:w-[250px] opacity-80">
         <Image
-          src="/Artboard3.png"
+          src="/images/1.png"
           alt="Background Image"
           width={300}
           height={300}

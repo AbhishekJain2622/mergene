@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
+import AccountBag from "../components/AccountBag"; // Import the component
 
 export default function Home() {
   return (
@@ -16,9 +17,8 @@ export default function Home() {
       </div>
 
       {/* 🔹 Top Right Navigation (Mobile-friendly) */}
-      <nav className="absolute top-6 right-4 md:right-10 flex items-center space-x-4 md:space-x-6 text-black text-xs md:text-sm uppercase z-20">
-        <Link href="/account" className="hover:underline">Account</Link>
-        <Link href="/cart" className="hover:underline">Bag (1)</Link>
+      <nav className="absolute top-6 right-4 md:right-10 text-black text-xs md:text-sm uppercase z-20">
+        <AccountBag /> 
       </nav>
 
       {/* 🔹 Centered Navigation with Logo */}
@@ -27,10 +27,14 @@ export default function Home() {
           <Link href="/store" className="hover:italic transition-all">Shop</Link>
           <Link href="/alter" className="hover:italic transition-all">Alter</Link>
 
-          {/* ✅ Responsive Logo */}
-          <h1 className="text-4xl md:text-6xl font-light tracking-[0.2em] text-center">
-            MARGÉNE
-          </h1>
+          {/* ✅ Responsive Logo Image */}
+          <Image
+            src="/LOGO.png"
+            alt="Margene Logo"
+            width={200} 
+            height={50} 
+            className="object-contain"
+          />
 
           <Link href="/collections" className="hover:italic transition-all">Collection</Link>
           <Link href="/about" className="hover:italic transition-all">About</Link>

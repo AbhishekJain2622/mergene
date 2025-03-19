@@ -5,11 +5,7 @@ export default function Contact() {
   return (
     <Layout>
 
-         {/* 🔹 Top Right Navigation (Mobile-friendly) */}
-         <nav className="flex space-x-4">
-                  <Link href="/account" className="hover:underline">Account</Link>
-        <Link href="/cart" className="hover:underline">Bag (1)</Link>
-      </nav>
+      
       {/* Page Title */}
       <div className="mt-10">
         <h1 className="text-xl md:text-2xl font-serif">Contact us</h1>
