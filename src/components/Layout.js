@@ -42,7 +42,7 @@ export default function Layout({ children }) {
       {!isMobile && (
         <aside className="w-64 bg-white p-7">
           <div className="mb-8">
-            <Image src="/logo.png" alt="Logo" width={150} height={50} priority />
+            <Image src="/LOGO.png" alt="Logo" width={150} height={50} priority />
           </div>
           <nav className="space-y-4 text-lg">
             <Link href="/collections" className="block hover:italic">Collections</Link>
